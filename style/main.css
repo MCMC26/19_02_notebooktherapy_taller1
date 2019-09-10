@@ -10,15 +10,28 @@ header{
 justify-content: space-between;
 margin-top: 2vw;
 }
-
+.mainheader__btn{
+    z-index: 4;
+    margin-right: 5vw;
+    background: none;
+    border: none;
+    display: none;
+}
 .mainheader--scrolled{
-   
+    color: black;
     background-color: #C4C4C4; 
 }
 .mainnav__item{
     margin: 0 3vw;
     text-decoration: none;
     height: auto;
+    color: #ffff;
+
+}
+
+.mainnav__item--scrolled{
+    color: black;
+
 }
 
 .mainnav__item:hover{
@@ -28,12 +41,56 @@ margin-top: 2vw;
 }
 
 .logo{
-    width: 1%;
-    min-width: 100px;
+    padding: 1vw 2vw;
+    width: 2%;
+    min-width: 120px;
 }
 
 .imagen{
     width: 100%;
+}
+.mainheader__mainnav--active{
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(0%, 0%);
+}
+@media (max-width: 500px){
+    .mainheader__mainnav{
+        position: absolute;
+        width: 60%;
+        top: 40px;
+        border-radius: 15%;
+        right: 0px;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        pointer-events: none;
+        transform: translate(-100%, 0%)
+    }
+
+    
+    .mainheader__mainnav--active{
+        background: rgba(79,78,178, 0.7);
+        opacity: 1;
+        pointer-events: all;
+        transform: translate(0%, 0%);
+    }
+
+    .mainheader__btn{
+        display: block;
+    }
+
+    
+.logo{
+    padding: 1vw 2vw;
+    width: 2%;
+    min-width: 80px;
+}
+
+.mainnav__item{
+    margin: 2vw;
+    text-align: center;
+}
 }
 .blocktext{
     z-index: 2;
@@ -48,7 +105,6 @@ position: absolute;
 top: -3.5vw;
 width: 100%;
 right:0.5%;
-
 
 }
 
