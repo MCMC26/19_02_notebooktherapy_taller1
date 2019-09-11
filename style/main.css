@@ -93,11 +93,19 @@ margin-top: 2vw;
 }
 }
 .blocktext{
+    font-family: Helvetica;
     z-index: 2;
     color: aliceblue;
     position: absolute;
-    top: 20vw;
+    top: 18vw;
     left: 60vw;
+   
+}
+.blocktext_tittle{
+   
+}
+.blocktext_text{
+    font-size: 50%;
 }
 .personaje{
  z-index: 1;
