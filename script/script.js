@@ -12,7 +12,7 @@ function handleLoad() {
             console.log('mainheader--scrolled')
             nav.classList.remove>('mainheader--scrolled');
         }
-        
+       
     }
     window.addEventListener('scroll', handleScroll);
 
