@@ -121,6 +121,11 @@ margin-top: 2vw;
     left: 60vw;
     border-bottom-color: black;
 }
+.gallery{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
 
 .personaje{
  z-index: 1;
@@ -136,7 +141,27 @@ body{
     margin: 0%;
     width: 100%;
 }
+.slider{
+    overflow: hidden;
+    width: 30vw;
+    align-content: center;
+}
+
+.slider__tape{
+    display: flex;
+    align-items: flex-start;
+    transition: transform .3s ease-in-out;
+}
+
+.slider__tape--inactive{
+    transition: none;
+}
+
+.slider__img{
+    width: 30vw;
+}
 footer{
+    margin: 2 em, 2em, 2em, 2em;
     background: #4F52B3;
     justify-content: center;
     align-content: center;
@@ -148,15 +173,17 @@ footer{
     display: block;
 }
 .footer__socialmedia{
+    display: flex;
     border-top: 2vw;
     align-content: space-between;
-    display: flex;
+    
 }
 .footer__image{
     
     width: 10%;
 }
 .contenedor{
+    align-content: center;
     width: 50%;
 }
 *{

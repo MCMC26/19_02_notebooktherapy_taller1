@@ -15,9 +15,17 @@ function handleLoad() {
        
     }
     window.addEventListener('scroll', handleScroll);
-
+    
+var range = document.querySelector('input');
+var rangeText = document.querySelector('.blocktext');
+function handleRange(){
+    blocktext.style.opacity = range.value / 100;
+    rangeText.innerText = range.value + '%';
+}
+range.addEventListener('input', handleRange);
     }
 window.addEventListener('load', handleLoad);
+
 
 var btn = document.querySelector('.mainheader__btn');
 var navi = document.querySelector('.mainheader__mainnav');
